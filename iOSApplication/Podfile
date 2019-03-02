@@ -6,8 +6,10 @@ target 'BoilerFlex' do
   use_frameworks!
 
   # Pods for BoilerFlex
-  pod "Firebase/Core"
-  pod "Firebase/Firestore"
+  pod 'Alamofire'
+  pod 'SwiftyJSON'
+  pod 'Firebase/Core'
+  pod 'Firebase/Firestore'
 
   target 'BoilerFlexTests' do
     inherit! :search_paths
