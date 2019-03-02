@@ -1,0 +1,6 @@
+framework module Pods_BoilerFlexUITests {
+  umbrella header "Pods-BoilerFlexUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
