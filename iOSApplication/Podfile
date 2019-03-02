@@ -10,6 +10,7 @@ target 'BoilerFlex' do
   pod 'SwiftyJSON'
   pod 'Firebase/Core'
   pod 'Firebase/Firestore'
+  pod 'Charts'
 
   target 'BoilerFlexTests' do
     inherit! :search_paths

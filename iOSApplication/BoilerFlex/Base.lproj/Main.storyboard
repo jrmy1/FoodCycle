@@ -63,7 +63,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="2f9-sg-c8k"/>
-                        <segue destination="Xfb-LU-aNK" kind="relationship" relationship="viewControllers" id="yMO-eX-Mnq"/>
+                        <segue destination="2SX-8F-j6T" kind="relationship" relationship="viewControllers" id="yMO-eX-Mnq"/>
                         <segue destination="DEb-bx-jaa" kind="relationship" relationship="viewControllers" id="c30-Gu-GCz"/>
                     </connections>
                 </tabBarController>
@@ -71,21 +71,44 @@
             </objects>
             <point key="canvasLocation" x="125.59999999999999" y="138.98050974512745"/>
         </scene>
-        <!--Item-->
+        <!--ChartsViewController-->
         <scene sceneID="29n-Xv-bM4">
             <objects>
-                <viewController id="Xfb-LU-aNK" sceneMemberID="viewController">
+                <viewController title="ChartsViewController" id="Xfb-LU-aNK" customClass="ChartsViewController" customModule="BoilerFlex" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mwc-dl-ZJQ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="A3n-wG-lam" customClass="PieChartView" customModule="Charts">
+                                <rect key="frame" x="67" y="92" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="DYz-8f-RrO"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="GSr-Zo-Wlx"/>
+                    <navigationItem key="navigationItem" id="Rhf-Wt-tem">
+                        <nil key="title"/>
+                        <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="ElO-FO-Mxs">
+                            <rect key="frame" x="60" y="7" width="255" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <segments>
+                                <segment title="Daily"/>
+                                <segment title="Weekly"/>
+                                <segment title="Monthly"/>
+                                <segment title="Yearly"/>
+                            </segments>
+                        </segmentedControl>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="chartView" destination="A3n-wG-lam" id="AN5-o8-68b"/>
+                        <outlet property="segmentControl" destination="ElO-FO-Mxs" id="icm-0h-nt2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YSv-bY-JiZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3024.8000000000002" y="138.98050974512745"/>
+            <point key="canvasLocation" x="3964" y="138.98050974512745"/>
         </scene>
         <!--Logs View Controller-->
         <scene sceneID="hcj-YF-hZO">
@@ -177,6 +200,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J0U-RR-TJG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1124" y="523.98800599700155"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="mxj-z8-93w">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="2SX-8F-j6T" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="GSr-Zo-Wlx"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="W3D-Sf-hOe">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Xfb-LU-aNK" kind="relationship" relationship="rootViewController" id="8Xi-Wh-8pp"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hDk-lz-qL1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3024.8000000000002" y="138.98050974512745"/>
         </scene>
     </scenes>
 </document>
