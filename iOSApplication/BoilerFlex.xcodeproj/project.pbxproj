@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		242462AD222A7F18008CC89A /* LogCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242462AC222A7F18008CC89A /* LogCell.swift */; };
+		243CE149222A824600A45A2A /* LogsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243CE148222A824600A45A2A /* LogsTableViewController.swift */; };
+		2477C484222A80DC007E29E7 /* LogsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2477C483222A80DC007E29E7 /* LogsViewController.swift */; };
 		3F2769BE222A1681004F6487 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2769BD222A1681004F6487 /* AppDelegate.swift */; };
 		3F2769C0222A1681004F6487 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2769BF222A1681004F6487 /* CameraViewController.swift */; };
 		3F2769C3222A1681004F6487 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F2769C1222A1681004F6487 /* Main.storyboard */; };
@@ -35,6 +38,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		242462AC222A7F18008CC89A /* LogCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogCell.swift; sourceTree = "<group>"; };
+		243CE148222A824600A45A2A /* LogsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogsTableViewController.swift; sourceTree = "<group>"; };
+		2477C483222A80DC007E29E7 /* LogsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogsViewController.swift; sourceTree = "<group>"; };
 		3F2769BA222A1681004F6487 /* BoilerFlex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BoilerFlex.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F2769BD222A1681004F6487 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3F2769BF222A1681004F6487 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
@@ -106,6 +112,9 @@
 				3F2769C4222A1683004F6487 /* Assets.xcassets */,
 				3F2769C6222A1683004F6487 /* LaunchScreen.storyboard */,
 				3F2769C9222A1683004F6487 /* Info.plist */,
+				242462AC222A7F18008CC89A /* LogCell.swift */,
+				2477C483222A80DC007E29E7 /* LogsViewController.swift */,
+				243CE148222A824600A45A2A /* LogsTableViewController.swift */,
 			);
 			path = BoilerFlex;
 			sourceTree = "<group>";
@@ -259,8 +268,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				243CE149222A824600A45A2A /* LogsTableViewController.swift in Sources */,
+				2477C484222A80DC007E29E7 /* LogsViewController.swift in Sources */,
 				3F3B49E1222A650300E039D2 /* Food101.mlmodel in Sources */,
 				3F2769C0222A1681004F6487 /* CameraViewController.swift in Sources */,
+				242462AD222A7F18008CC89A /* LogCell.swift in Sources */,
 				3F2769BE222A1681004F6487 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
