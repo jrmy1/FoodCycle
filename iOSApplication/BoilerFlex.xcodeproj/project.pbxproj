@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F1662C3222A797F0066B6DD /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1662C2222A797F0066B6DD /* CameraViewController.swift */; };
+		3F1662C5222A7DD30066B6DD /* UIImage+PixelBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1662C4222A7DD30066B6DD /* UIImage+PixelBuffer.swift */; };
 		3F2769BE222A1681004F6487 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2769BD222A1681004F6487 /* AppDelegate.swift */; };
-		3F2769C0222A1681004F6487 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2769BF222A1681004F6487 /* CameraViewController.swift */; };
 		3F2769C3222A1681004F6487 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F2769C1222A1681004F6487 /* Main.storyboard */; };
 		3F2769C5222A1683004F6487 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F2769C4222A1683004F6487 /* Assets.xcassets */; };
 		3F2769C8222A1683004F6487 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F2769C6222A1683004F6487 /* LaunchScreen.storyboard */; };
@@ -35,9 +36,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3F1662C2222A797F0066B6DD /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		3F1662C4222A7DD30066B6DD /* UIImage+PixelBuffer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+PixelBuffer.swift"; sourceTree = "<group>"; };
 		3F2769BA222A1681004F6487 /* BoilerFlex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BoilerFlex.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F2769BD222A1681004F6487 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3F2769BF222A1681004F6487 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		3F2769C2222A1681004F6487 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3F2769C4222A1683004F6487 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3F2769C7222A1683004F6487 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -101,11 +103,12 @@
 			children = (
 				3F3B49E0222A650200E039D2 /* Food101.mlmodel */,
 				3F2769BD222A1681004F6487 /* AppDelegate.swift */,
-				3F2769BF222A1681004F6487 /* CameraViewController.swift */,
 				3F2769C1222A1681004F6487 /* Main.storyboard */,
 				3F2769C4222A1683004F6487 /* Assets.xcassets */,
 				3F2769C6222A1683004F6487 /* LaunchScreen.storyboard */,
 				3F2769C9222A1683004F6487 /* Info.plist */,
+				3F1662C2222A797F0066B6DD /* CameraViewController.swift */,
+				3F1662C4222A7DD30066B6DD /* UIImage+PixelBuffer.swift */,
 			);
 			path = BoilerFlex;
 			sourceTree = "<group>";
@@ -259,9 +262,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F1662C5222A7DD30066B6DD /* UIImage+PixelBuffer.swift in Sources */,
 				3F3B49E1222A650300E039D2 /* Food101.mlmodel in Sources */,
-				3F2769C0222A1681004F6487 /* CameraViewController.swift in Sources */,
 				3F2769BE222A1681004F6487 /* AppDelegate.swift in Sources */,
+				3F1662C3222A797F0066B6DD /* CameraViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,6 +441,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FM5392D3U2;
 				INFOPLIST_FILE = BoilerFlex/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -454,6 +459,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FM5392D3U2;
 				INFOPLIST_FILE = BoilerFlex/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
