@@ -18,7 +18,7 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
         super.viewDidLoad()
     }
     
-    @IBAction func buttonPressed(_ sender: Any) {
+    @IBAction func onPress(_ sender: Any) {
         let alert = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
         let imagePickerView = UIImagePickerController()
         imagePickerView.delegate = self
@@ -41,9 +41,8 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
         dismiss(animated: true, completion: nil)
     }
     
-    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String: Any]) {
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         dismiss(animated: true, completion: nil)
-        
         guard let image = info["UIImagePickerControllerOriginalImage"] as? UIImage else {
             return
         }
@@ -66,7 +65,7 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
         let confidence = result.foodConfidence["\(result.classLabel)"]! * 100.0
         let converted = String(format: "%.2f", confidence)
         
-        imageView.image = image
+        photoView.image = image
         percentage.text = "\(result.classLabel) - \(converted) %"
     }
     
