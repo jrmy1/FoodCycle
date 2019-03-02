@@ -19,8 +19,6 @@ class ChartsViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         
-        chartView.delegate = self
-        
     }
     
     
