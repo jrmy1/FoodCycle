@@ -15,7 +15,7 @@ import FirebaseFirestore
 class CameraViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
     @IBOutlet var photoView: UIImageView!
-    @IBOutlet var percentage: UITextField!
+    @IBOutlet weak var foodLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -71,7 +71,7 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
         let converted = String(format: "%.2f", confidence)
         
         photoView.image = image
-        percentage.text = "\(result.classLabel) - \(converted) %"
+        foodLabel.text = "\(result.classLabel) - \(converted) %"
         
         let headers: HTTPHeaders = [
             "x-app-id": "a51d3f5d",
@@ -144,41 +144,41 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
             
         }
         /*
-            
+         
             if let value = response.result.value {
-                
+         
                 let json = JSON(value) // JSON comes from SwiftyJSON
                 let foodData = json["branded"].array?[0]
                 let db = Firestore.firestore()
-                
+         
                 let foodName = foodData?["food_name"].string
                 let nixItemId = JSON(value)["branded"].array?[0]["nix_item_id"].string
-                
+         
                 let urlString = "https://trackapi.nutritionix.com/v2/search/item?nix_item_id=" + nixItemId!
-                
+         
                 let url = URL(string: urlString)!
 
                 Alamofire.request(url, headers: headers).responseJSON(completionHandler: { (response) in
-                    
+         
                     guard response.result.error == nil else {
                         // got an error in getting the data, need to handle it
                         print("error calling GET")
                         print(response.result.error!)
                         return
                     }
-                    
+         
                     if let value = response.result.value {
-                        
+         
                         let json = JSON(value) // JSON comes from SwiftyJSON
                         print(json) // to see the JSON response
                         let foodData = json["branded"].array?[0]
                         let db = Firestore.firestore()
-                        
+         
                         let foodName = foodData?["food_name"].string
-                    
+         
                     }
                 }
-                
+         
                     /*
                 db.collection("logs").addDocument(data: [
                     "food_name": foodName ?? "food unknown", //foodData["foot_name"] as? String,
@@ -190,7 +190,7 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
                         print("Document added")
                     }
                 }*/
-                
+         
                 }
             }
         }
