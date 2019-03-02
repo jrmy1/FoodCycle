@@ -37,11 +37,13 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
         self.present(alert, animated: true, completion: nil)
     }
     
-    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+    @objc func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
         dismiss(animated: true, completion: nil)
     }
     
-    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+    @objc func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+        print("hello")
+
         dismiss(animated: true, completion: nil)
         guard let image = info["UIImagePickerControllerOriginalImage"] as? UIImage else {
             return
