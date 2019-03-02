@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:BoilerFlex.xcodeproj">
+      location = "group:/Users/jeremy/Documents/BoilerFlex/BoilerFlex/Food101.mlmodel">
+   </FileRef>
+   <FileRef
+      location = "self:">
    </FileRef>
 </Workspace>
