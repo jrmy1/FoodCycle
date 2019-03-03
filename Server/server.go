@@ -30,7 +30,15 @@ func hello(w http.ResponseWriter, r *http.Request) {
 
   result, err := client.Collection("data").Doc("2019-03-03").Get(ctx)
 
-  io.WriteString(w, fmt.Sprint(result.Data()[param1].(int64)))
+  if (param1 == "meal") {
+
+    meal := result.Data()[param1].(string)
+    meal = Split(meal, ",")[0]
+
+    io.WriteString(w, meal)
+  } else {
+    io.WriteString(w, fmt.Sprint(result.Data()[param1].(int64)))
+  }
   defer client.Close()
 }
 
