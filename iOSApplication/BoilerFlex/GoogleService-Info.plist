@@ -7,9 +7,9 @@
 	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
 	<string>ca-app-pub-3940256099942544/4411468910</string>
 	<key>CLIENT_ID</key>
-	<string>275459588973-uj7acorpkmcrak4cecmp0ll8kvfimph3.apps.googleusercontent.com</string>
+	<string>275459588973-4s2is3kvc6lmhvaep8h61u7d33u324qs.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.275459588973-uj7acorpkmcrak4cecmp0ll8kvfimph3</string>
+	<string>com.googleusercontent.apps.275459588973-4s2is3kvc6lmhvaep8h61u7d33u324qs</string>
 	<key>API_KEY</key>
 	<string>AIzaSyBxckwSFNXnZiae44cuTDDoo9jSUvq4ZBs</string>
 	<key>GCM_SENDER_ID</key>
@@ -33,7 +33,7 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:275459588973:ios:b3ffd0d18ba43917</string>
+	<string>1:275459588973:ios:9db985d01d51b508</string>
 	<key>DATABASE_URL</key>
 	<string>https://food-cycle-233321.firebaseio.com</string>
 </dict>

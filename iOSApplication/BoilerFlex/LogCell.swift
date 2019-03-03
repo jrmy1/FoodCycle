@@ -11,13 +11,16 @@ import UIKit
 class LogCell: UITableViewCell {
     
     @IBOutlet weak var foodNameLabel: UILabel!
-    @IBOutlet weak var calorieCountLabel: UILabel!
     @IBOutlet weak var dateLabel: UILabel!
+    @IBOutlet var photoView: UIImageView!
     
 
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        photoView.layer.cornerRadius = 12.0
+        
+        
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

@@ -8,6 +8,7 @@
 
 import UIKit
 import FirebaseFirestore
+import AlamofireImage
 
 class LogsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
@@ -37,7 +38,6 @@ class LogsViewController: UIViewController, UITableViewDelegate, UITableViewData
             }
             else {
                 self.logs = snapshot!.documents
-                print(self.logs[0].data())
                 self.tableView.reloadData()
             }
         }
@@ -65,33 +65,35 @@ class LogsViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
         let cell = tableView.dequeueReusableCell(withIdentifier: "LogCell") as! LogCell
         let log = self.logs[indexPath.row].data()
-        
-        cell.calorieCountLabel.text = String(log["calories"] as! Int)
-        cell.foodNameLabel.text = log["food_name"] as? String
+        let imageUrl = URL(string: log["photo_url"] as! String)!
         
         let rawdate = (log["time"] as! Timestamp).dateValue()
-        print(rawdate)
         let formatter = DateFormatter()
-        formatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
+        formatter.dateFormat = "dd-MM-yyyy"
         let date = formatter.string(from: rawdate)
         
         cell.dateLabel.text = date
+        cell.foodNameLabel.text = log["food_name"] as? String
+        
+        cell.photoView.af_setImage(withURL: imageUrl, placeholderImage: UIImage(named: "image_placeholder"), completion: { (response) in
+            cell.photoView.image = response.result.value
+        })
         
         return cell
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
+        let cell = sender as! UITableViewCell
+        let indexPath = tableView .indexPath(for: cell)!
+        let log = logs[indexPath.row].data()
+        
         // Pass the selected object to the new view controller.
+        //let navigationController = segue.destination as! UINavigationController
+        let detailViewController = segue.destination as! DetailViewController
+        detailViewController.log = log
+        tableView.deselectRow(at: indexPath, animated: true)
     }
-    */
 
 }
