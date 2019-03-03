@@ -3,7 +3,7 @@ package main
 import (
   "log"
   "io"
-//  "fmt"
+  "fmt"
   "net/http"
   "context"
   firebase "firebase.google.com/go"
@@ -11,6 +11,11 @@ import (
 )
 
 func hello(w http.ResponseWriter, r *http.Request) {
+
+  param1 := r.URL.Query().Get("value")
+  if param1 == "" {
+    param1 = "protein"
+  }
 
   ctx := context.Background()
 
@@ -25,7 +30,7 @@ func hello(w http.ResponseWriter, r *http.Request) {
 
   result, err := client.Collection("data").Doc("2019-03-03").Get(ctx)
 
-  io.WriteString(w, result.Data()["calories"].(string))
+  io.WriteString(w, fmt.Sprint(result.Data()[param1].(int64)))
   defer client.Close()
 }
 
