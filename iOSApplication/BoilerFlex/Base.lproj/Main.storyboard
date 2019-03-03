@@ -19,19 +19,37 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yKk-jN-LoJ">
-                                <rect key="frame" x="67" y="135" width="240" height="240"/>
+                                <rect key="frame" x="67" y="94" width="240" height="240"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nMn-GM-e8a">
-                                <rect key="frame" x="140" y="472" width="94" height="30"/>
+                                <rect key="frame" x="125" y="525" width="128" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <state key="normal" title="Capture Food"/>
                                 <connections>
                                     <action selector="onPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9Na-5r-ga3"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jBg-G6-iCf">
-                                <rect key="frame" x="67" y="390" width="240" height="21"/>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="8D3-qJ-fUN">
+                                <rect key="frame" x="106" y="463" width="163" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="x0.5"/>
+                                    <segment title="x1"/>
+                                    <segment title="x2"/>
+                                    <segment title="x3"/>
+                                </segments>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Serving Size" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CP9-eL-yVF">
+                                <rect key="frame" x="16" y="434" width="343" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Select a Serving Size then Capture a picture of your food" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jBg-G6-iCf">
+                                <rect key="frame" x="67" y="342" width="240" height="47"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -198,9 +216,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="DYz-8f-RrO"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Rhf-Wt-tem">
-                        <nil key="title"/>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Daily Summary" id="Rhf-Wt-tem"/>
                     <connections>
                         <outlet property="segmentControl" destination="ElO-FO-Mxs" id="icm-0h-nt2"/>
                     </connections>
@@ -291,7 +307,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="pP8-Hw-ORX"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Jgt-8v-ELk"/>
+                    <navigationItem key="navigationItem" title="Food Logs" id="Jgt-8v-ELk"/>
                     <connections>
                         <outlet property="tableView" destination="opQ-2N-P8X" id="o7z-cI-UtG"/>
                     </connections>

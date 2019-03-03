@@ -9,8 +9,8 @@
 /* Begin PBXBuildFile section */
 		1F6AA81A648626C6D8AED494 /* Pods_BoilerFlexUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 792734AACE528149D4D0E607 /* Pods_BoilerFlexUITests.framework */; };
 		212BADB8A5DCE3F43E7EF209 /* Pods_BoilerFlex.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5FD40B88B3236D8B1C2A2DF /* Pods_BoilerFlex.framework */; };
+		240813A3222B7563001248D8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 240813A2222B7563001248D8 /* GoogleService-Info.plist */; };
 		242462AD222A7F18008CC89A /* LogCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242462AC222A7F18008CC89A /* LogCell.swift */; };
-		24E1008F222ADDA80041851E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 24E1008E222ADDA80041851E /* GoogleService-Info.plist */; };
 		24E10093222B2D1A0041851E /* LogsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E10092222B2D1A0041851E /* LogsViewController.swift */; };
 		3F1662C3222A797F0066B6DD /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1662C2222A797F0066B6DD /* CameraViewController.swift */; };
 		3F1662C5222A7DD30066B6DD /* UIImage+PixelBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1662C4222A7DD30066B6DD /* UIImage+PixelBuffer.swift */; };
@@ -45,8 +45,8 @@
 /* Begin PBXFileReference section */
 		00F15A1A2B7826ADC84EAC4B /* Pods-BoilerFlexTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BoilerFlexTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BoilerFlexTests/Pods-BoilerFlexTests.release.xcconfig"; sourceTree = "<group>"; };
 		162EFBB71AF4F1B82CFEEF7C /* Pods-BoilerFlex.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BoilerFlex.release.xcconfig"; path = "Pods/Target Support Files/Pods-BoilerFlex/Pods-BoilerFlex.release.xcconfig"; sourceTree = "<group>"; };
+		240813A2222B7563001248D8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		242462AC222A7F18008CC89A /* LogCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogCell.swift; sourceTree = "<group>"; };
-		24E1008E222ADDA80041851E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		24E10092222B2D1A0041851E /* LogsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogsViewController.swift; sourceTree = "<group>"; };
 		3F1662C2222A797F0066B6DD /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		3F1662C4222A7DD30066B6DD /* UIImage+PixelBuffer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+PixelBuffer.swift"; sourceTree = "<group>"; };
@@ -126,6 +126,7 @@
 		3F2769BC222A1681004F6487 /* BoilerFlex */ = {
 			isa = PBXGroup;
 			children = (
+				240813A2222B7563001248D8 /* GoogleService-Info.plist */,
 				3F3B49E0222A650200E039D2 /* Food101.mlmodel */,
 				3F2769BD222A1681004F6487 /* AppDelegate.swift */,
 				3F2769C1222A1681004F6487 /* Main.storyboard */,
@@ -135,7 +136,6 @@
 				242462AC222A7F18008CC89A /* LogCell.swift */,
 				3F1662C2222A797F0066B6DD /* CameraViewController.swift */,
 				3F1662C4222A7DD30066B6DD /* UIImage+PixelBuffer.swift */,
-				24E1008E222ADDA80041851E /* GoogleService-Info.plist */,
 				24E10092222B2D1A0041851E /* LogsViewController.swift */,
 				3F199D9E222B235A00E5200A /* ChartsViewController.swift */,
 			);
@@ -292,7 +292,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F2769C8222A1683004F6487 /* LaunchScreen.storyboard in Resources */,
-				24E1008F222ADDA80041851E /* GoogleService-Info.plist in Resources */,
+				240813A3222B7563001248D8 /* GoogleService-Info.plist in Resources */,
 				3F2769C5222A1683004F6487 /* Assets.xcassets in Resources */,
 				3F2769C3222A1681004F6487 /* Main.storyboard in Resources */,
 			);

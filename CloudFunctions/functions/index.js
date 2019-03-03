@@ -33,6 +33,7 @@ exports.createLog = functions.firestore
           saturated_fat: snap.data().saturated_fat,
           sodium: snap.data().sodium,
           sugars: snap.data().sugars,
+          last_meal: snap.data().food_name,
 
         }
 
@@ -45,6 +46,7 @@ exports.createLog = functions.firestore
           data.saturated_fat += doc.data().saturated_fat;
           data.sodium += doc.data().sodium;
           data.sugars += doc.data().sugars;
+          last_meal: doc.data().food_name,
         }
 
         dataRef.set(data);
