@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		1F6AA81A648626C6D8AED494 /* Pods_BoilerFlexUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 792734AACE528149D4D0E607 /* Pods_BoilerFlexUITests.framework */; };
 		212BADB8A5DCE3F43E7EF209 /* Pods_BoilerFlex.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5FD40B88B3236D8B1C2A2DF /* Pods_BoilerFlex.framework */; };
-		240813A3222B7563001248D8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 240813A2222B7563001248D8 /* GoogleService-Info.plist */; };
 		242462AD222A7F18008CC89A /* LogCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242462AC222A7F18008CC89A /* LogCell.swift */; };
 		24E10093222B2D1A0041851E /* LogsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E10092222B2D1A0041851E /* LogsViewController.swift */; };
 		3F1662C3222A797F0066B6DD /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1662C2222A797F0066B6DD /* CameraViewController.swift */; };
