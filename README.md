@@ -1,16 +1,23 @@
-# **app name**
+# **Food Cycle**
 
-**app info**
+Using our application, the user can take a picture of his meal and accurately log the nutritional information of the food automatically. Food Cycle also implements Alexa to retrieve the data recorded by the application and outputs the nutrition facts log upon request.
 
+Uses Food101 coreml, Nutritionix API, Firebase, nodejs, Alexa Developer Console, golang proxy server.
 
 ## User Stories
 
-The following functionality of **app name**:
+The following functionality of **Food Cycle**:
 
-- [ ] **app functionality**
-- [ ] **app functionality**
-- [ ] **app functionality**
-- [ ] **app functionality**
+- [x] User can take a photo of food.
+- [x] Photo is recognized through image processing with coreml.
+- [x] Using natural language processing to find nutritional statistics.
+- [x] Saves food data in Firebase.
+- [x] App queries food data to display.
+- [x] App queries food data within a time period for trends.
+- [x] App queries all user food data for comprehensive history.
+- [x] User can ask Alexa for their food consumption statistics.
+- [x] User can ask Alexa if they are fat (responds with caloric intake).
+- [x] User can track their nutritional goals.
 
 ## Video Walkthrough
 
