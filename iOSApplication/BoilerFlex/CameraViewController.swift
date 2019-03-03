@@ -140,8 +140,6 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
                     }
                 })
             }
-            
-            
         }
     }
     
