@@ -5,6 +5,7 @@ import (
   "io"
   "fmt"
   "net/http"
+  "strings"
   "context"
   firebase "firebase.google.com/go"
   "google.golang.org/api/option"
@@ -33,7 +34,7 @@ func hello(w http.ResponseWriter, r *http.Request) {
   if (param1 == "meal") {
 
     meal := result.Data()[param1].(string)
-    meal = Split(meal, ",")[0]
+    meal = strings.Split(meal, ",")[0]
 
     io.WriteString(w, meal)
   } else {
