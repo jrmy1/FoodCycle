@@ -115,26 +115,26 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
                         
                         let foodName = foodData?["food_name"].string
                         let calories = foodData?["nf_calories"].number
-                        let cholesterol = foodData?["nf_cholesterol"].number
-                        let carbs = foodData?["nf_total_carbohydrate"].number
-                        let sugars = foodData?["nf_sugars"].number
+                        let cholesterol = round((foodData?["nf_cholesterol"].number?.doubleValue)! / 3.0)
+                        let carbs = round((foodData?["nf_total_carbohydrate"].number?.doubleValue)! / 3.0)
+                        let sugars = round((foodData?["nf_sugars"].number?.doubleValue)! / 0.5)
                         let photoUrl = foodData?["photo"]["thumb"].string
-                        let sodium = foodData?["nf_sodium"].number
-                        let protein = foodData?["nf_protein"].number
-                        let fat = foodData?["nf_total_fat"].number
-                        let saturatedFat = foodData?["nf_saturated_fat"].number
+                        let sodium = round((foodData?["nf_sodium"].number?.doubleValue)! / 23.0)
+                        let protein = round((foodData?["nf_protein"].number?.doubleValue)! / 1.500)
+                        let fat = round((foodData?["nf_total_fat"].number?.doubleValue)! / 0.650)
+                        let saturatedFat = round((foodData?["nf_saturated_fat"].number?.doubleValue)! / 0.200)
                         
                         db.collection("logs").addDocument(data: [
                             "food_name": foodName!,
                             "calories": calories!,
-                            "cholesterol": cholesterol!,
-                            "carbs": carbs!,
-                            "sugars": sugars!,
+                            "cholesterol": cholesterol,
+                            "carbs": carbs,
+                            "sugars": sugars,
                             "photo_url": photoUrl!,
-                            "sodium": sodium!,
-                            "protein": protein!,
-                            "fat": fat!,
-                            "saturated_fat": saturatedFat!,
+                            "sodium": sodium,
+                            "protein": protein,
+                            "fat": fat,
+                            "saturated_fat": saturatedFat,
                             "time": Timestamp(date: Date())
                         ])
                     }

@@ -7,11 +7,9 @@
 //
 
 import UIKit
-import Charts
 
 class ChartsViewController: UIViewController {
 
-    @IBOutlet var chartView: PieChartView!
     @IBOutlet var segmentControl: UISegmentedControl!
     
     override func viewDidLoad() {
@@ -20,6 +18,8 @@ class ChartsViewController: UIViewController {
         // Do any additional setup after loading the view.
         
     }
+
+
     
     
 
