@@ -1,6 +1,6 @@
 # **Food Cycle**
 
-Using our application, the user can take a picture of his meal and accurately log the nutritional information of the food automatically. Food Cycle also implements Alexa to retrieve the data recorded by the application and outputs the nutrition facts log upon request.
+Using our application, the user can take a picture of his meal and accurately log the nutritional information of the food automatically.  Food Cycle also implements an Alexa skill to relay the nutrition log recorded by the application and vocalize it to the user.
 
 Uses Food101 coreml, Nutritionix API, Firebase, nodejs, Alexa Developer Console, golang proxy server.
 
