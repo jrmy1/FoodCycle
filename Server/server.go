@@ -46,6 +46,7 @@ func main() {
 
 
   http.HandleFunc("/", hello)
+  http.Handle("/nutrition-label-generator/", http.StripPrefix("/nutrition-label-generator/", http.FileServer(http.Dir("./nutrition-label-generator"))))
   http.ListenAndServe(":8424", nil)
 
 }
