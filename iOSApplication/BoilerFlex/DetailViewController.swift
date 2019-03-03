@@ -8,22 +8,25 @@
 
 import UIKit
 import Firebase
+import WebKit
+import Alamofire
 
 class DetailViewController: UIViewController {
 
     var log: [String: Any]!
-    @IBOutlet var photoView: UIImageView!
     @IBOutlet var name: UILabel!
     @IBOutlet var date: UILabel!
     @IBOutlet var calories: UILabel!
+    @IBOutlet var carbs: UILabel!
+    @IBOutlet var cholesterol: UILabel!
+    @IBOutlet var fat: UILabel!
+    @IBOutlet var protein: UILabel!
+    @IBOutlet var saturated_fat: UILabel!
+    @IBOutlet var sodium: UILabel!
+    @IBOutlet var sugar: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        let imageUrl = URL(string: log["photo_url"] as! String)!
-        photoView.af_setImage(withURL: imageUrl, placeholderImage: UIImage(named: "image_placeholder"), completion: { (response) in
-            self.photoView.image = response.result.value
-        })
         
         self.name.text = log["food_name"] as? String
         
@@ -31,10 +34,14 @@ class DetailViewController: UIViewController {
         let formatter = DateFormatter()
         formatter.dateFormat = "dd-MM-yyyy"
         self.date.text = formatter.string(from: rawdate)
-        
-        self.calories.text = log["calories"] as? String
-        
-        
+        self.calories.text = String(log["calories"] as! Int) + " cal"
+        self.carbs.text = String(log["carbs"] as! Int) + " g"
+        self.cholesterol.text = String(log["cholesterol"] as! Int) + " mg"
+        self.fat.text = String(log["fat"] as! Int) + " g"
+        self.protein.text = String(log["protein"] as! Int) + " g"
+        self.saturated_fat.text = String(log["saturated_fat"] as! Int) + " g"
+        self.sodium.text = String(log["sodium"] as! Int) + " mg"
+        self.sugar.text = String(log["sugar"] as! Int) + " g"
     }
     
     /*
