@@ -286,7 +286,7 @@
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GXm-uH-FOg">
                                                     <rect key="frame" x="95" y="58" width="257" height="20.5"/>
-                                                    <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="13"/>
                                                     <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -295,7 +295,6 @@
                                                 <constraint firstItem="7Iz-dw-aiW" firstAttribute="top" secondItem="4Bc-7x-1L7" secondAttribute="topMargin" constant="4" id="78m-ik-6Ab"/>
                                                 <constraint firstItem="WwR-92-HvT" firstAttribute="leading" secondItem="7Iz-dw-aiW" secondAttribute="trailing" constant="8" id="9Kx-6Q-8ti"/>
                                                 <constraint firstItem="7Iz-dw-aiW" firstAttribute="leading" secondItem="4Bc-7x-1L7" secondAttribute="leadingMargin" constant="8" id="AAI-vH-rXz"/>
-                                                <constraint firstItem="GXm-uH-FOg" firstAttribute="top" relation="greaterThanOrEqual" secondItem="WwR-92-HvT" secondAttribute="bottom" constant="8" id="CA1-v8-4io"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="GXm-uH-FOg" secondAttribute="trailing" constant="8" id="DJQ-6s-FeO"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="GXm-uH-FOg" secondAttribute="bottom" constant="8" id="FEy-bW-VMR"/>
                                                 <constraint firstItem="WwR-92-HvT" firstAttribute="top" secondItem="4Bc-7x-1L7" secondAttribute="top" constant="15" id="QkY-GR-c43"/>
