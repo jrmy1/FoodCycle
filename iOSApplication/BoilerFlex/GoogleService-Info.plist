@@ -7,21 +7,21 @@
 	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
 	<string>ca-app-pub-3940256099942544/4411468910</string>
 	<key>CLIENT_ID</key>
-	<string>295578031078-an1990frde07pijuqu0rr5c9esg660f3.apps.googleusercontent.com</string>
+	<string>275459588973-4s2is3kvc6lmhvaep8h61u7d33u324qs.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.295578031078-an1990frde07pijuqu0rr5c9esg660f3</string>
+	<string>com.googleusercontent.apps.275459588973-4s2is3kvc6lmhvaep8h61u7d33u324qs</string>
 	<key>API_KEY</key>
-	<string>AIzaSyBFJulP1FKN9forSkmSUcoInyYqB0d1-6I</string>
+	<string>AIzaSyBxckwSFNXnZiae44cuTDDoo9jSUvq4ZBs</string>
 	<key>GCM_SENDER_ID</key>
-	<string>295578031078</string>
+	<string>275459588973</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
 	<string>com.moldingtofu.github.io.BoilerFlex</string>
 	<key>PROJECT_ID</key>
-	<string>food-cycle-bm</string>
+	<string>food-cycle-233321</string>
 	<key>STORAGE_BUCKET</key>
-	<string>food-cycle-bm.appspot.com</string>
+	<string>food-cycle-233321.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<true></true>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -33,8 +33,8 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:295578031078:ios:9db985d01d51b508</string>
+	<string>1:275459588973:ios:9db985d01d51b508</string>
 	<key>DATABASE_URL</key>
-	<string>https://food-cycle-bm.firebaseio.com</string>
+	<string>https://food-cycle-233321.firebaseio.com</string>
 </dict>
 </plist>
